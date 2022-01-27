@@ -1,5 +1,5 @@
 ---
-title: Introduction to PHP
+title: Session overview
 layout: default
 ---
 
@@ -9,5 +9,5 @@ Everyone interested has the opportunity to participate in the first workshop ses
 
 ## Workshop sessions
 
-Session01
+[Session01](session01)
 :   In this session we will create a simple web application with a HTML form for posting data to the sever and persisting the data using SQLite.

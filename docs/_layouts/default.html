@@ -2,7 +2,7 @@
 <html lang="en">
     <meta charset="utf-8" />
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-    <link rel="stylesheet" href="/docs/css/style.css" />
+    <link rel="stylesheet" href="{{ site.url }}/css/style.css" />
     <meta name="title" content="{{ site.title }}" />
     <meta name="description" content="{{ site.description }}" />
     <meta name="viewport" content="width=device-width" />
@@ -14,5 +14,8 @@
     <main>
       {{ content }}
     </main>
+    <footer>
+      <div>Code and examples available on <a href="https://github.com/UCNProf/dma_0920_workshop_php" target="_blank">GitHub</a>.</div>
+    </footer>
   </body>
 </html>
