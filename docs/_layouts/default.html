@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8" />
+    <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+    <link rel="stylesheet" href="/docs/css/style.css" />
+    <meta name="title" content="{{ site.title }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.title }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
