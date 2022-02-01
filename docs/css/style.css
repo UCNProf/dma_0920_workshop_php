@@ -28,3 +28,11 @@ code {
   background-color: #eee;
   padding: .1em;
 }
+
+footer {
+  margin-top: 1em;
+  padding: .5em;
+  border: solid black;
+  border-width: thin 0 0 0;
+  text-align: center;
+}
