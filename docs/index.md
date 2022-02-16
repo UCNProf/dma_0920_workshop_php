@@ -7,6 +7,8 @@ The three workshop sessions will introduce to the program language PHP for devel
 
 Everyone interested has the opportunity to participate in the first workshop session. The following two sessions are primarily targeted at computer science students on fourth semester.
 
+On GitHub you can find [resources, exercises](https://ucnprof.github.io/dma_0920_workshop_php/) and [the repository](https://github.com/UCNProf/dma_0920_workshop_php).
+
 ## Workshop sessions
 
 [Session01](session01)
