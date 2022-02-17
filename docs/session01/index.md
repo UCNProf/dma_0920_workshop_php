@@ -6,7 +6,7 @@ layout: default
 ## Resources
 
 - [PHP: PHP Manual - Manual](https://www.php.net/manual/en/)
-- [w3schools PHP Tutorial](https://www.w3schools.com/php/default.asp)
+- [w3schools PHP Tutorial](https://www.w3schools.com/php/)
 - [Learn PHP 8 : Using MySQL, JavaScript, CSS3, and HTML5](http://ez-scv.statsbiblioteket.dk:2048/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=2642716&site=ehost-live&ebv=EB&ppid=pp_C1)
 
 ### SQLite
