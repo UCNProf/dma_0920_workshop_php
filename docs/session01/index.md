@@ -27,7 +27,11 @@ Install the web server
     
     1. Open a terminal in the directory for your project.
     2. Download the Docker Image for this session: `> docker pull chrwahl/workshop:2202php01`.
-    3. Create a container based on the image: `> docker run -d -p 80:80 --name phpworkshop -v "$(PWD)":/var/www/html chrwahl/workshop:2202php01`. If you have something else watching port 80 you can change the port: `-p 81:80`
+    3. Create a container based on the image:
+       - (linux) `> docker run -d -p 80:80 --name phpworkshop -v "$(PWD)":/var/www/html chrwahl/workshop:2202php01`.
+       - (PowerShell) `> docker run -d -p 80:80 --name phpworkshop -v ${PWD}:/var/www/html chrwahl/workshop:2202php01`.
+       
+       If you have something else watching port 80 you can change the port: `-p 81:80`
     4. Open a browser with the URL: `http://localhost` (or if you changed the port: `http://localhost:81`). You should now see your `index.html` file content.
 
 Make the todo app work
