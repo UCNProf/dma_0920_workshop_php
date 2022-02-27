@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  website:
+    build: website
+    restart: always
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - api
+  api:
+    build: api
+    restart: always
+    volumes:
+      - ./api:/var/www/html
+    ports:
+      - 81:80
+    depends_on:
+      - database
+  database:
+    build: database
+    restart: always
