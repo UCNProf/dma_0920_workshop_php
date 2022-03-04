@@ -14,6 +14,15 @@ layout: default
 
 The code for these exercises can be found in the repo at [dma_0920_workshop_php/session02](https://github.com/UCNProf/dma_0920_workshop_php/tree/main/session02).
 
+Short docker-compose introduction
+:   docker-compose is an application for orchestrating the creation of docker images and containers. You can see an example of a [docker-compose.yml](https://github.com/UCNProf/dma_0920_workshop_php/blob/main/session02/docker-compose.yml) file used for this session. Here are a few commands that you can use for building, starting and stopping containers:
+
+    | Command | Description|
+    |------------------------|-----------------------------------|
+    | `docker-compose build` | Build the images for the project. |
+    | `docker-compose up -d` | Start containers for the project. |
+    | `docker-compose down`  | Stop containers for the project.  |
+
 Finish the `/notes` endpoint
 :   As the code is now, you can get all notes, get a note by id and update a note by id. Now we are missing: Create a new note and delete a note by id. And while you are at it: You also need to add the functionality to the front-end JavaScript.
 
