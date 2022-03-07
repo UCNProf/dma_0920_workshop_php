@@ -29,6 +29,10 @@ code {
   padding: .1em;
 }
 
+pre {
+  background-color: #eee;
+}
+
 footer {
   margin-top: 1em;
   padding: .5em;
