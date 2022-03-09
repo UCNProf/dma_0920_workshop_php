@@ -1,4 +1,21 @@
- And on more important question: Can you remember the password that you specified
+---
+title: Session03
+layout: default
+---
+
+## Resources
+
+- [Laravel docs](https://laravel.com/docs/9.x)
+- [PHP Laravel Project Example for Beginners](https://phppot.com/php/php-laravel-project-example/) (the tutorial is fine, but does not use Docker, so skip to step 2)
+
+## Exercises
+
+The objective with the following exercises is to get experience with Laravel. After installing the framework you will create a simple setup for a todo list with a model, database table, controller and a view.
+
+A prerequesit is that you already have Docker and WSL up and running. Help and more documentation can be found at [Laravel docs](https://laravel.com/docs/9.x).
+
+Before installing Laravel
+:   Before we get started read the section [Getting started on Windows](https://laravel.com/docs/9.x/installation#getting-started-on-windows). Don't execute the install script yet, but try to open a terminal and start the WSL session: Write `wsl` and hit enter. Can you execute the command `$ curl`? And on more important question: Can you remember the password that you specified for WSL?
 
 Installing a Laravel example app using Docker (and Sail)
 :   Go further down on the install page: [Choosing your sail services](https://laravel.com/docs/9.x/installation#choosing-your-sail-services) and read the section.
@@ -129,7 +146,9 @@ Create two views
     3. Add the following to the `app.blade.php` view file:
         ```
         <!DOCTYPE html>
+        {% raw %}
         <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+        {% endraw %}
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -148,7 +167,9 @@ Create two views
         @extends('app') @section('content')
           <ul>
             @foreach ($todos as $item)
+            {% raw %}
               <li>{{ $item->title }}</li>
+            {% endraw %}  
             @endforeach
           </ul>
         ```
