@@ -1,21 +1,4 @@
----
-title: Session03
-layout: default
----
-
-## Resources
-
-- [Laravel docs](https://laravel.com/docs/9.x)
-- [PHP Laravel Project Example for Beginners](https://phppot.com/php/php-laravel-project-example/) (the tutorial is fine, but does not use Docker, so skip to step 2)
-
-## Exercises
-
-The objective with the following exercises is to get experience with Laravel. After installing the framework you will create a simple setup for a todo list with a model, database table, controller and a view.
-
-A prerequesit is that you already have Docker and WSL up and running. Help and more documentation can be found at [Laravel docs](https://laravel.com/docs/9.x).
-
-Before installing Laravel
-:   Before we get started read the section [Getting started on Windows](https://laravel.com/docs/9.x/installation#getting-started-on-windows). Don't execute the install script yet, but try to open a terminal and start the WSL session: Write `wsl` and hit enter. Can you execute the command `$ curl`?
+ And on more important question: Can you remember the password that you specified
 
 Installing a Laravel example app using Docker (and Sail)
 :   Go further down on the install page: [Choosing your sail services](https://laravel.com/docs/9.x/installation#choosing-your-sail-services) and read the section.
@@ -36,6 +19,7 @@ Configur a bash alias
         alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
         ```
     3. Ctrl+o to save, Ctrl+x to exit.
+    4. Run `source ~/.bashrc` to update your bash session.
 
 Start and stop the project
 :   Now you should be able to start and stop the project using sail (almost just like you do with docker-compose):
@@ -47,7 +31,11 @@ Create a new model
 :   Create a model and a migration file for a todo list.
 
     1. Run `$ sail php artisan make:model Todo --migration`.
-    2. Open the new migration file and alter the `up()` function:
+    2. Open the new migration file and in the top add:
+        ```
+        use App\Models\Todo;
+        ```
+        and alter the `up()` function:
 
         ```
         public function up()
